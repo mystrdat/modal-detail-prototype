@@ -1,0 +1,32 @@
+{
+  "name": "gonzo-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.sass",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mystrdat/gonzo-stack.git"
+  },
+  "author": "mystrdat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mystrdat/gonzo-stack/issues"
+  },
+  "homepage": "https://github.com/mystrdat/gonzo-stack#readme",
+  "dependencies": {
+    "autoprefixer": "^6.3.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.3",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "inStyle": "^1.6.1",
+    "include-media": "^1.4.4",
+    "layout-tools": "^2.0.8",
+    "normalize-scss": "^5.0.3"
+  }
+}

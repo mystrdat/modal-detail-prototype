@@ -1,0 +1,50 @@
+/*
+  Detail
+  ============================== */
+
+#detail
+  +fix
+  width: 100%
+  height: 100%
+  perspective: 1000px
+  opacity: 0
+  pointer-events: none
+
+  .wrapper
+    width: 100%
+    height: 100%
+    padding: 2*$base
+    display: flex
+    flex-direction: column
+    background-color: #222
+    transition: all 3000ms ease-in-out
+    transform-origin: 0 50%
+
+  &.vertical .wrapper
+    flex-direction: row
+
+    .view
+      order: 2
+
+    .list
+      order: 1
+      margin: 0 20px 0 0
+  
+  &.in
+    opacity: 1
+    pointer-events: all
+
+    .wrapper
+      animation: detailIn 500ms ease-in-out 1
+
+  .view
+    flex-grow: 1
+    border: 2px solid #fff
+
+@keyframes detailIn
+  0%
+    opacity: 0
+    transform: translate3d(-70%, 0, 500px) rotateY(90deg) scale(0.5)
+  100%
+    opacity: 1
+    transform: translate3d(0,0,0)

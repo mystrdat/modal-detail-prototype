@@ -1,0 +1,41 @@
+/*
+  Base
+  ============================== */
+
+*, *:before, *:after
+  box-sizing: inherit
+
+html
+  height: 100%
+  position: relative
+  box-sizing: border-box
+  font-size: $fontScale
+  text-size-adjust: 100%
+
+body
+  min-width: $documentMinWidth
+  height: 100%
+  font-family: $fontFamily
+  font-size: $fontM
+  font-weight: $fontLight
+  color: $colorFont
+
+ul,
+ol
+  list-style: none
+  padding: 0
+
+img
+  max-width: 100%
+  width: auto
+  height: auto
+
+*:focus
+  outline: none
+
+[disabled]
+  cursor: default
+
+.hidden,
+[hidden]
+  display: none
